@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connection_string = 'mongodb://127.0.0.1:27017/scaffoldDb';
+const connection_string = 'mongodb://127.0.0.1:27017/Booking-uni';
 
 module.exports = async (app) => {
     try {
