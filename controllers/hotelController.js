@@ -34,7 +34,7 @@ router.post('/create', async (req, res) => {
         owner: req.user._id
     }
 
-    //console.log(hotel);
+    console.log('req.user  '+req.user);
     try {
         if (Object.values(hotel).some(v => !v)) {
             throw new Error('All fields are required!');
