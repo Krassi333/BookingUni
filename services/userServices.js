@@ -30,6 +30,7 @@ async function register(email, username, password) {
 
 async function login(email, password) {
     const user = await User.findOne({ email }).collation({ locale: 'en', strength: 2 });
+    console.log('user : '+user);
 
     if (!user) {
         throw new Error('Incorect email or password!');
